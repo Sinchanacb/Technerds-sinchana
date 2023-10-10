@@ -1,0 +1,90 @@
+<html>
+    <head>
+    </head>
+    <style>
+        body{
+            margin:0;
+            width: auto;
+            height:100%;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            overflow: hidden;
+        }
+        .container{
+            font-size: 10px;
+            width: 40px;
+            height: 40px;
+            position: relative;
+        }
+        .sun{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            /* right: 50px; */
+            width: 20px;
+            height: 20px;
+            background-color: yellow;
+            border-radius: 50%;
+            box-shadow: 0  0  3px white;
+        }
+        .earth{
+            position: relative;
+            border-style: solid;
+            border-color: white transparent;
+            border-width: 0.1px  0.1px 0  0;
+            border-radius: 50%;
+        }
+        .moon{
+            position: absolute;
+            border-style: solid;
+            border-color: white transparent;
+            border-width: 0.1px  0.1px 0  0;
+            border-radius: 50%;
+        }
+        .earth{
+            top: 5px;
+            left: 5px;
+            width: 30px;
+            height: 30px;
+            animation: orbit 36.5s linear infinite;
+        }
+        .earth:before,
+        .moon:before{
+            content: '';
+            position:absolute;
+            border-radius: 100%;
+        }
+        .earth:before{
+            top:2.8px;
+            right: 2.8px;
+            width: 3px;
+            height: 3px;
+            background-color: aqua;  
+        }
+        .moon:before{
+            top: 10.8px;
+            right: 10.2px;
+            width: 10.2px;
+            height: 10.2px;
+            background-color: silver;
+        }
+        @keyframes orbit{
+            /* from{
+                transform: rotate(0 deg);
+            }, */
+            to{
+                transform: rotate(360 deg);
+            }
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="sun"></div>
+            <div class="earth">
+                <div class="moon"></div>
+            </div>
+        </div>
+    </body>
+</html>
