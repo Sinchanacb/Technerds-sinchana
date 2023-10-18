@@ -1,0 +1,27 @@
+body{
+background-color: bisque;
+}
+#sanju{
+    color: blue;
+}  
+.pg{
+    color: aqua;
+}
+h1,h2,p{
+color: chartreuse;
+}
+h1{
+    font-size: 50px;
+}
+h2{
+    font-weight: 500;
+}
+h3{
+    font-style: italic;
+}
+h4{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h5{
+    font-variant: small-caps;
+}
